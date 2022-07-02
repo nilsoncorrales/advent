@@ -1,0 +1,27 @@
+{
+  "name": "adventjs",
+  "version": "1.0.0",
+  "description": "My adventJS solutions",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "28.1.4",
+    "husky": "8.0.1",
+    "jest": "28.1.2",
+    "standard": "17.0.0"
+  },
+  "type": "module"
+}
