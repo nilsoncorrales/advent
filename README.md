@@ -60,4 +60,4 @@ npm run test day04
 ## 💖 Acknowledgements
 
 - [@midudev](https://twitter.com/midudev) for sharing his knowledge with the DEV community in [YouTube](https://midu.tube/), [Twitch](https://midu.live/), [blog](https://midu.dev/), ... & creating [adventJS](https://adventjs.dev/)
-- [@borjapazr](https://twitter.com/borjapazr) for creating [Awesome adventJS](https://github.com/borjapazr/awesome-adventjs)
+- [@borjapazr](https://twitter.com/corrales_nilson) for creating [Awesome adventJS](https://github.com/borjapazr/awesome-adventjs)
