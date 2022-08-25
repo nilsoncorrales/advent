@@ -5,6 +5,6 @@
     "module": "es6",
     "target": "es2022"
 },
-"include": ["src"],
+"include": ["src", "index.test.js"],
 "exclude": ["node_modules"]
 }
