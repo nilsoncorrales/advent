@@ -12,6 +12,6 @@ describe('Day 3 challenge', () => {
     // "() bici" // ❌
     // const grinch = 'bici coche (balón) bici coche peluche'
     const grinch = '(()) bici'
-    expect(isValid(grinch)).toEqual(true)
+    expect(isValid(grinch)).toEqual(false)
   })
 })
