@@ -5,6 +5,11 @@
  2. funcion que retorne una lista de guión bajo de acuerdo a la altura del arbol
  */
 
+/**
+ * The function takes a number as an argument and returns a string that represents a Christmas tree of
+ * the given height.
+ * @param {number} height - the height of the tree, an integer.
+ */
 export default function createXmasTree (height) {
   // ¡Y no olvides también poner los turrones
   return showTree(height)
@@ -13,7 +18,7 @@ export default function createXmasTree (height) {
 /**
  * # Esta funcion devuelve un arreglo de numeros
  * It creates an array of odd numbers up to the height of the tree.
- * @param altura - the height of the tree
+ * @param {number} altura - the height of the tree
  * @returns An array of odd numbers.
  */
 function getNumberForTree (altura) {
@@ -30,6 +35,11 @@ function getNumberForTree (altura) {
 }
 
 // retorna una lista de guión bajo de acuerdo al ultimo numero de la funcion /getNumberForTree/
+/**
+ * It takes a number and returns an array of that many underscores.
+ * @param {number} cant - number of underscores to be returned
+ * @returns An array of '_' characters.
+ */
 function getArbolGuiones (cant) {
   const data = []
   for (let i = 0; i < cant; i++) {
@@ -38,6 +48,12 @@ function getArbolGuiones (cant) {
   return data
 }
 
+/**
+ * It returns the starting position of a string within a string of a given length.
+ * @param {number} longitud - The length of the string you want to center.
+ * @param {number} value - The value to be centered
+ * @returns The start position of the string.
+ */
 function getStartPosition (longitud, value) {
   return Math.floor((longitud - value) / 2)
 }
@@ -46,9 +62,9 @@ function getStartPosition (longitud, value) {
  * # Esta funcion reemplaza los guiones por asceriscos, el arreglo de numeros es la cantidad de asceriscos por fila
  * It takes a base array, a starting position, and a number of items to replace, and returns a new
  * array with the items replaced.
- * @param baseTheTree - the array that contains the tree.
- * @param startPosition - the position where the asterisks will start to be painted
- * @param cantidadAPintar - the number of asterisks to be painted
+ * @param {string[]} baseTheTree - the array that contains the tree.
+ * @param {number} startPosition - the position where the asterisks will start to be painted
+ * @param {number} cantidadAPintar - the number of asterisks to be painted
  * @returns a new array with the same values as the original array, but with the values in the
  * positions specified by the function parameters replaced by asterisks.
  */
@@ -67,9 +83,9 @@ function replaceGuionesToAsceriscos (baseTheTree, startPosition, cantidadAPintar
 /**
  * It takes an array, a starting position, and a number of items to replace, and returns a new array
  * with the items replaced.
- * @param baseTheTree - the array that contains the tree.
- * @param startPosition - the position where the trunk will start to be painted
- * @param cantidadAPintar - is the number of trunks to be painted
+ * @param {string[]} baseTheTree - the array that contains the tree.
+ * @param {number} startPosition - the position where the trunk will start to be painted
+ * @param {number} cantidadAPintar - is the number of trunks to be painted
  * @returns The newData array with the new values.
  */
 function replaceGuionesToTronco (baseTheTree, startPosition, cantidadAPintar) {
@@ -86,7 +102,7 @@ function replaceGuionesToTronco (baseTheTree, startPosition, cantidadAPintar) {
 
 /**
  * It takes a number, and returns an array of strings, each string being a row of a tree.
- * @param altura - height of the tree
+ * @param {number} altura - height of the tree
  * @returns An array of strings.
  */
 function assembleTree (altura) {
@@ -111,7 +127,7 @@ function assembleTree (altura) {
 /**
  * It takes a number as an argument, assembles a tree based on that number, and returns a string of the
  * tree.
- * @param height - the height of the tree
+ * @param {number} height - the height of the tree
  * @returns a string that represents a tree.
  */
 function showTree (height) {
